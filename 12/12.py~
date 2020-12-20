@@ -1,0 +1,59 @@
+direction = 'E' # E, W, N ,S
+positionEastWestLetter = 'E'
+positionNorthSouth = 'N'
+positionEastWest = 0
+positionNorthSouth = 0
+
+
+def setChangeDirection (position, number, newPosition):
+    if (number < 0):
+        position = newPosition
+        number = abs (number)
+
+def setForward (position, number)
+    if (position == 'E' or position == 'W')
+        positionEastWest += number
+    if (position == 'N' or position == 'S')
+        positionNorthSouth += number
+
+def setDirection (number)
+    if (position == 'N' and number ==90)
+        position == 'W'
+    if (position == 'N' and number==180)
+        position == 'S'
+    if (position
+
+
+def main():
+    print ("hello")
+    file1 = open ('12.txt','r')
+    lines = file1.readlines()
+
+    for line in lines:
+        letter = line[0:1]
+        number = line[1:]
+
+        if (letter == 'F')
+            setForward (position, number)
+
+        if (letter == 'N')
+            positionNorthSouth += number;
+
+        if (letter == 'S')
+            positonNorthSouth -= number;
+            if (positionNorthSouth < 0)
+                letter = 'N'
+                positionNorthSouth = abs(positionNorthSouth)
+        else if (letter == 'N' && positionNorthSouth == 'S')
+            positionNorthSouth -= number;
+            if (positionNorthSouth < 0)
+                letter = 'S'
+                positionNorthSouth = abs(positionNorthSouth)
+
+            
+        print (letter + ' la posicion ahora es ' + number);
+
+if __name__ == "__main__":
+    main()
+
+
