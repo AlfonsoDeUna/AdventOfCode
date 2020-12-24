@@ -65,7 +65,7 @@ def main():
         number = line[1:]
 
         if (letter == 'F'):
-            setForward (letter, number)
+            setForward (position, number)
         
         if (letter == 'L' or letter =='W'):
             setDirection (letter, number)
